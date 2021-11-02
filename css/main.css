@@ -29,11 +29,14 @@ html {
 ::-moz-selection {
     background: #F95F71;
     text-shadow: none;
+    color: #292929;
+    
 }
 
 ::selection {
     background: #F95F71;
     text-shadow: none;
+    color: #292929;
 }
 
 /*
@@ -120,6 +123,12 @@ h2 {
 	font-size: 1.125rem;
 }
 
+h3 {
+	font-family: 'Raleway', sans-serif;
+	color: #F95F71;
+	margin-bottom: 0;
+}
+
 
 p {
 
@@ -127,7 +136,11 @@ p {
 	line-height: 1.2rem;
 }
 
-ul {}
+ul {
+	margin-top: 0;
+	padding-top: 0;
+	padding-left: 1.25em;
+}
 
 li {
 	line-height: 2rem;
@@ -156,9 +169,15 @@ strong {
 	margin: 0 auto;
 }
 
-#two-thirds p{
+#two-thirds p,
+.one-half p{
 	font-size: 1.3125rem;
 	line-height: 2rem;
+}
+
+.one-half h3 {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 #one-third p {
@@ -278,7 +297,7 @@ strong {
 
 @media only screen and (min-width: 48em) {
 	#maincol {
-		max-width: 640px;
+		max-width: 912px;
 		margin: 0 auto;
 		padding: 0 4%;
 	}
@@ -294,6 +313,14 @@ strong {
 		float: right;
 		padding-top: 2%;
 	}
+	
+	.one-half {
+		width: 50%;
+		float: left;
+		/* padding-top: 10%; */
+	}
+	
+	
 	.full-width {
 		width: 100%;
 		clear: both;
