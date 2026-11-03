@@ -1,95 +1,146 @@
-
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>JasonDorn.com &#8211; UX Design &amp; Consulting Calgary</title>
-  <meta name="description" content="UX Design &amp; Consulting Calgary">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jason Dorn — UX Research</title>
+<meta name="description" content="Jason Dorn leads UX research for complex financial platforms. Calgary, Canada.">
+<meta name="author" content="Jason Dorn">
+<link rel="canonical" href="https://jasondorn.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jason Dorn — UX Research">
+<meta property="og:description" content="I find out what's true, then make it useful.">
+<meta property="og:url" content="https://jasondorn.com/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F8F7F4;
+  --surface: #FFFFFF;
+  --ink: #1B1B1B;
+  --muted: #3A3935;
+  --graphite: #5E5C57;
+  --border: #E3E1DB;
+  --accent: #1D6E78;
+  --accent-deep: #14525A;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--ink); text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 5%; }
 
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
+.masthead { padding-top: 32px; }
+.masthead p {
+  margin: 0;
+  padding-bottom: 14px;
+  border-bottom: 3px double var(--graphite);
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+main { flex-grow: 1; }
+.hero {
+  max-width: 760px;
+  padding: 120px 0 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+h1 em { color: var(--accent); }
+.bio { margin: 0; font-size: 19px; color: var(--muted); max-width: 600px; }
+.aside {
+  margin: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 600px;
+}
+
+footer { background: var(--paper); border-top: 1px solid var(--border); }
+footer .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px 32px;
+}
+footer h2 { margin: 0; font-family: var(--font-display); font-size: 26px; font-weight: 400; }
+.contact { display: flex; flex-wrap: wrap; gap: 8px 32px; margin: 0; padding: 0; list-style: none; font-size: 16px; }
+.contact a { display: inline-flex; align-items: center; min-height: 44px; }
+
+@media (max-width: 640px) {
+  .hero { padding: 72px 0 80px; gap: 20px; }
+  .bio { font-size: 18px; }
+}
+</style>
 </head>
-
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  <div id="maincol">
-	  <div class="full-width">
-		  <h1>UX Research leader with a proven track record.</h1>
-	  </div>
-	  <div id="two-thirds">
-		  <hr />
-		  <p>Hi I’m Jason, a UX Research Lead in Calgary Alberta. Currently working with Morgan Stanley Wealth Management where I define research processes, build great research teams, and help the organization make research informed decisions with impact.</p>
-	  </div>
-	  <div id="one-third">
-	  	<p><strong>Jason Dorn</strong><br />
-		   CV/Resume on <a href="https://www.linkedin.com/in/jasondorn/" target="_blank">LinkedIn</a>
-		</p>
-	  	<p><strong>Email</strong><br />
-		   <a href="mailto:work@jasondorn.com">work@jasondorn.com</a>
-		</p>
 
-	  </div>	  
-	  
-	  <div class="full-width">
-		  	<h2>Skills</h2>
-			<div class="one-half">  
-		  	<h3>Research</h3>
-				<ul>
-					<li>Study design &amp; planning</li>
-					<li>Participant recruitment</li>
-					<li>Conducting user interviews</li>
-					<li>Moderation of usability test</li>
-					<li>Qualitative & quantitative data analysis</li>
-					<li>Presentation of research insights</li>
-				  
-			  </ul>
-		  </div>
-		  <div class="one-half">
-		  	<h3>Leadership</h3>
-				<ul>
-					<li>Hiring & team development</li>
-					<li>Mentoring & career guidance</li>
-					<li>Research process training</li>
-					<li>Performance reviews</li>
+<header class="container masthead">
+  <p>Jason Dorn</p>
+</header>
 
-				  
-			  </ul>
-		  </div>
-	  </div>
-	  <div class="full-width">
-		   <h2>A few organizations I’ve worked with.</h2>
-		   <ul id="clients">
-			   <li><img src="img/logo-msatwork.png" alt="Morgan Stanley at Work"></li>
-			   <li><img src="img/logo-bayer.png" alt="Bayer Crop Science"></li>
-			   <li><img src="img/logo-mccormick.png" alt="McCormick Spices"></li>
-			   <li><img src="img/logo-mccann.png" alt="McCann World Group Canada"></li>
-		   </ul>
-	  </div>
-   </div>
+<main class="container">
+  <section class="hero" aria-labelledby="headline">
+    <p class="label">UX Research · Calgary, Canada</p>
+    <h1 id="headline">I find out what's true, then make it <em>useful</em>.</h1>
+    <p class="bio">I lead UX research for complex financial platforms: building research teams, running the studies that shape product decisions, and helping researchers grow. Fifteen years in UX, the last seven in research.</p>
+    <p class="aside">I started as a designer, so I still have opinions about kerning. I keep them out of research readouts. Mostly.</p>
+  </section>
+</main>
 
-
-
-
+<footer>
+  <div class="container">
+    <h2>Say hello.</h2>
+    <ul class="contact">
+      <li><a href="mailto:work@jasondorn.com">work@jasondorn.com</a></li>
+      <li><a href="https://www.linkedin.com/in/jasondorn/" rel="me">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
 
 </body>
-
-
-<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	try {
-	var pageTracker = _gat._getTracker("UA-6467455-1");
-	pageTracker._trackPageview();
-	} catch(err) {}</script>
-</body>
-
 </html>
